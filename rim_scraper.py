@@ -18,7 +18,7 @@ class ScraperConfig:
     base_url: str = "https://novelfire.net/book/regressor-instruction-manual/chapter-"
     start_chapter: int = 467
     end_chapter: int = 1531
-    keyword: str = "Hee-ra"
+    keyword: str = "example"
     delay_seconds: float = 1.0
     timeout: int = 10
 
@@ -140,7 +140,7 @@ class NovelScraper:
 #   python rim_scraper.py --start 600
 
 # Custom range + keyword:
-#   python rim_scraper.py --start 600 --end 800 --keyword "Hee-ra"
+#   python rim_scraper.py --start 600 --end 800 --keyword "example"
 #------------------------------
 
 def parse_args():
@@ -163,7 +163,7 @@ def parse_args():
     parser.add_argument(
         "--keyword",
         type=str,
-        default="Hee-ra",
+        default="example",
         help="Keyword to search for"
     )
 
