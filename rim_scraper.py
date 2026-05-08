@@ -52,7 +52,7 @@ class NovelScraper:
         return session
 
     # ----------------------------
-    # Fetch HTML safely
+    # Fetch HTML
     # ----------------------------
 
     def fetch_html(self, url: str, retries: int = 3) -> Optional[str]:
